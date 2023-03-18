@@ -14,21 +14,23 @@ function Heading() {
   };
 
   return (
-    <Navbar bg="dark" expand="lg" variant="dark">
+    <Navbar bg="dark" expand="lg" variant="dark" sticky="top">
       <Container>
         <Navbar.Brand href="/">Motozone</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+
             <Link
-              to="/"
+              to="/search"
               style={{
                 color: "white",
                 textDecoration: "none",
                 marginRight: "10px",
+                
               }}
             >
-              Home
+              Search
             </Link>
 
             <Link

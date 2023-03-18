@@ -33,7 +33,7 @@ function Detail(props) {
         .then((response) => {
           if (response.data.success) {
             alert("Your post has been successfully deleted.");
-            navigate("/");
+            navigate("/search");
           }
         })
         .catch((err) => {

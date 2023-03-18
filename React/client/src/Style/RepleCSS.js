@@ -37,24 +37,35 @@ const RepleUploadDiv = styled.div`
       border-radius: 0px 10px 10px 0px;
       border: 0.5px solid #c6c6c6;
       font-weight: bold;
-      background-color: #c6c6c6;
+      color: white;
+      background-color: black;
       &:hover,
       &:active {
         border: 0.5px solid darkgrey;
-        background-color: darkgrey;
+        background-color: white;
+        color: black;
       }
     }
   }
+
+
+
+
 
   .cancel {
     display: flex;
     justify-content: flex-end;
     button {
-      margin-top: 5px;
-      font-size: 12px;
       border-radius: 10px;
-      padding: 5px;
-      border: 1px solid #c6c6c6;
+      padding: 5px 10px;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      margin-top: 10px;
+      &:hover {
+        color: red;
+        border: 1px solid black;
+      }
     }
   }
 `;

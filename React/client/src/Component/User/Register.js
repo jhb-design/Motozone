@@ -11,7 +11,7 @@ function Register() {
   const [Email, setEmail] = useState("");
   const [PW, setPW] = useState("");
   const [PWConfirm, setPWConfirm] = useState("");
-  const [Flag, setFlag] = useState(false);
+
   const [NameCheck, setNameCheck] = useState(false);
   const [NameInfo, setNameInfo] = useState("");
 
@@ -25,7 +25,7 @@ function Register() {
   }, []);
 
   const RefisterFunc = async (e) => {
-    setFlag(true);
+;
     e.preventDefault();
     if (!(Name && Email && PW && PWConfirm)) {
       return alert("Please fill in all fields.");
@@ -59,7 +59,7 @@ function Register() {
     };
     
     axios.post("/api/user/register", body).then((response) => {
-      setFlag(false);
+  
       if (response.data.success) {
         
         navigate("/login");
@@ -91,6 +91,16 @@ function Register() {
       }
     });
   };
+
+
+
+
+
+
+
+
+
+  
 
   return (
     <LoginDiv>
@@ -124,7 +134,7 @@ function Register() {
           minLength={8}
           onChange={(e) => setPWConfirm(e.currentTarget.value)}
         />
-        <button disabled={Flag} onClick={(e) => RefisterFunc(e)}>
+        <button onClick={(e) => RefisterFunc(e)}>
           Sign Up
         </button>
       </form>

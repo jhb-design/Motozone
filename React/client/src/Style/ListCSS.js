@@ -17,8 +17,13 @@ const ListItem = styled.div`
   margin-top: 5vh;
   margin-bottom: 5vh;
   padding: 20px;
+  border-radius: 15px;
   box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.03),
     0px 15px 12px rgba(0, 0, 0, 0.1);
+   &:hover{
+    background-color: #f9f9f9;
+  }
+
   .title {
     margin-bottom: 10px;
   }

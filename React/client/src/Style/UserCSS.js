@@ -27,7 +27,7 @@ const LoginDiv = styled.div`
       }
     }
     button {
-      border-radius: 15px;
+      border-radius: 10px;
       padding: 5px 10px;
       background-color: black;
       color: white;
@@ -66,7 +66,7 @@ const MyPageDiv = styled.div`
       }
     }
     button {
-      border-radius: 15px;
+      border-radius: 10px;
       padding: 5px 10px;
       background-color: black;
       color: white;

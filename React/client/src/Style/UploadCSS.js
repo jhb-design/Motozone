@@ -61,7 +61,7 @@ const UploadButtonDiv = styled.div`
   display: flex;
   justify-content: flex-end;
   button {
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 5px 10px;
     background-color: black;
     color: white;
@@ -78,3 +78,4 @@ const UploadButtonDiv = styled.div`
 `;
 
 export { UploadDiv, UploadForm, UploadButtonDiv };
+

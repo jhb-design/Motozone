@@ -19,7 +19,7 @@ function Upload(props) {
 
   useEffect(() => {
     if (user.isLoading && !user.accessToken) {
-      alert("You can use it after Sign in.");
+      alert("You can use it after Log in.");
       navigate("/login");
     }
   }, [user]);
@@ -43,7 +43,7 @@ function Upload(props) {
       .then((response) => {
         if (response.data.success) {
           alert("Your post succeeded.");
-          navigate("/");
+          navigate("/search");
         } else {
           alert("Your post failed.");
         }

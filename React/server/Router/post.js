@@ -40,10 +40,10 @@ router.post("/submit", (req, res) => {
 router.post("/list", (req, res) => {
   let sort = {};
 
-  if (req.body.sort === "newest") {
+  if (req.body.sort === "Newest") {
     sort.createdAt = -1;
   } else {
-    
+    //popularity
     sort.repleNum = -1;
   }
   Post.find({

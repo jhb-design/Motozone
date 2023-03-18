@@ -4,8 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { loginUser, clearUser } from "./Reducer/userSlice.js";
 import firebase from "./firebase.js";
 
+import HomePage from "./Component/HomePage";
+
 import Heading from "./Component/Heading";
-import MainPage from "./Component/MainPage";
+import SearchPage from "./Component/SearchPage";
 
 import Upload from "./Component/Post/Upload";
 import PostArea from "./Component/Post/PostArea";
@@ -34,7 +36,8 @@ function App() {
     <>
       <Heading />
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<HomePage />} /> 
+        <Route path="/search" element={<SearchPage />} />
         {/*Post, Reple*/}
         <Route path="/upload" element={<Upload />} />
         <Route path="/post/:postNum" element={<PostArea />} />
